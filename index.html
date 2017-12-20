@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Crystal Collectors</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Add Bootstrap Themes Here (Just uncomment the ones below for example)-->
+   <link rel="stylesheet" href="https://bootswatch.com/3/cerulean/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Assets/CSS/Style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Rupam Kumari</a>
+        </div>
+    </div>        
+</nav> 
+<div class="row">
+		<div class="MainContent">
+			<div id="divHeading">
+				<h2><span>Crystal Collectors !<span></h2>
+			</div>
+			<div id="instructions">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. </p>
+				<p>Each time the game starts, the game will change the values of each crystal.</p>
+			</div>
+			<div class="row">		
+			<div id="guessingNumber" class="col-md-4">
+				<h3>Number to Guess: <span class="value"></span></h3> 
+			</div>
+			<div id="scoreboard" class="col-xs-4">
+				<h4><span id="status"></span></h4>
+				<h4>Wins: <span id="win"></span></h4>
+				<h4>Losses: <span id="loss"></span> </h4>
+			</div>
+			<div id ="totalScore" class="col-md-4">
+				<h3 id = "yts">Your Total Score is : <span id ="yourScore">0</span></h3>
+			</div>
+			</div>	
+			<div id="crystals"></div>			
+		</div>
+</div>
+<div class="navbar navbar-default navbar-fixed-bottom">
+ 	<div class="container" id="footer">Copyright 2017 Rupam Kumari</div>
+</div>
+<!-- adding jQuery -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="Assets/JS/CrystalGame.js"></script>
+</body>
+</html>
